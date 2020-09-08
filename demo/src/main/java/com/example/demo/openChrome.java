@@ -5,6 +5,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.*;
 
+/**
+ *
+ *打开chrome浏览器，使用百度搜索，关闭浏览器
+ */
+
 public class openChrome {
 
   public static void main(String[] args) {
@@ -23,10 +28,10 @@ public class openChrome {
     //getTitle()获取当前页面的title，用System.out.println()打印在控制台
     System.out.println("当前打开页面的标题是:" + driver.getTitle());
     //在搜索框输入文字
-    driver.findElement(By.id("kw")).sendKeys("我不知道");
+    driver.findElement(By.id("kw")).sendKeys("selenium");
     //点击搜索按钮
     driver.findElement(By.id("su")).click();
     //关闭浏览器
-    //            driver.quit();
+    driver.quit();
   }
 }
